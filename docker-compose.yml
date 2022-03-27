@@ -1,6 +1,6 @@
 version: '3'
 services:
-  php:
+  app:
     restart: always
     build:
       context: ./.docker/php
@@ -20,7 +20,7 @@ services:
     volumes:
       - ./:/var/www
     depends_on:
-      - php
+      - app
     networks:
       - application-network
 
