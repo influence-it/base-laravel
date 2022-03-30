@@ -13,7 +13,7 @@ class LoginDTO extends BaseDTO
     /**
      * @throws InvalidArgumentException
      */
-    public function __construct(public string $password, public ?string $cellphone, public ?string $email)
+    public function __construct(public string $password, public ?string $cellphone = null, public ?string $email = null)
     {
         if (!$this->cellphone && !$this->email) {
             throw new InvalidArgumentException();
