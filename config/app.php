@@ -177,6 +177,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // InfluenceIT Services Providers
+        InfluenceIT\Core\ServiceProviders\RouteServiceProvider::class,
+
     ],
 
     /*
