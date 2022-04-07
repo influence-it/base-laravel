@@ -18,7 +18,7 @@ class BaseException extends Exception
 
         $responseData = [
             'message' => trans($this->message),
-            'code' => $this->message,
+            'code' => $httpStatusCode,
             'errors' => $this->errors ?? [],
         ];
 
